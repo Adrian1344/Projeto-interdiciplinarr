@@ -167,19 +167,6 @@ for _ in range(num_gener):
     if best_temp[1] < best_fitness:
         best_route, best_fitness = best_temp
 
-def printRepeating(arr, n):
- 
-    mp = [0] * 100
-    for i in range(0, n):
-        mp[arr[i]] += 1
- 
-    for i in range(0, n):
-        if (mp[arr[i]] > 1):
-            print(arr[i], end = " ")
-            
-            mp[arr[i]] = 0
-
-print(printRepeating(best_route, len(best_route)))
 print(best_route)
 print(best_fitness)
 
